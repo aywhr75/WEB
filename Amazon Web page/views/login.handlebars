@@ -1,0 +1,35 @@
+<div class = "sign">    
+  <form action="/login" method="POST">
+  <div class="imgcontainer">
+    <img src="/img/logo.jpg" style = "width:50% "alt="logo">
+  </div>
+  <div class="line">
+  <div class="outer">
+    <div class="heading">
+      <h2> Sign-In</h2>
+    </div>
+  
+    <label for="email"><b>Email</b></label> <br>
+    <input type="text" id="email" value= "{{email}}"placeholder="ex) abc123@hotmail.com" name="email">
+    <p class="errormsg">{{eremail}}</p>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" id= "password" value= "{{password}}" placeholder="At least 6 charactors" name="password">
+    <p class="errormsg">{{erpassword}} </p>
+    <br>
+
+    <a href="#" class = "link">&blacktriangleright; Need help?</a>
+    </div>
+</div>
+<br>
+  <div class = "new"> 
+    <hr  color="lightgrey">
+     <p class = "text"> New to Amazon?</p>
+     </div>
+
+  <button> <a href="/registration">Create your Amazon account</a></button>
+  </div>
+  </div>
+</form>
+</div>
+

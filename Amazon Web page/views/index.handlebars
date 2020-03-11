@@ -1,0 +1,37 @@
+<section>
+    <img src="/img/bg.png" alt="background img">
+</section>
+<section>
+    <div class="cards">
+            {{#each home}}
+        <div class="box">
+            <div>
+                <h2>  {{this.title}}</h2>
+            </div>
+            <div>
+              <a href="/product"><img src = "{{this.img}}"></a>  
+            </div>
+            <div>
+                <a href="#" style="text-decoration:none">explore now</a>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+</section>
+<br><br>
+<section>
+    <div class="outerline">
+         <p style="font-size: x-large;">Today's Best Sellers <a href="#" style="text-decoration:none">See more</a></p>
+    <div class="cards1">    
+    {{#each bestsell}}
+        <div class="box1">
+            <div>
+                <a href="/product"><img src = "{{this.img}}"></a>
+            </div>
+        </div>
+    {{/each}}
+    </div>
+    </div>
+</section>
+
+

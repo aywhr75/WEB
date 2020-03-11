@@ -1,0 +1,47 @@
+<div class="sign">
+<form action="/registration" method="POST">
+ <div class="imgcontainer">
+    <img src="/img/logo.jpg" style="width: 50%;" alt="logo" class="amaz">
+  </div>
+  <div class="line">
+    <div class="outer">
+
+      <div class="heading">
+        <h2>Create account</h2>
+      </div>
+    
+      <label for="name"><b>Your Name</b></label><br>
+      <input type="text" value="{{name}}" placeholder="Enter Your Name" name="name" >
+      <p class="errormsg"> {{ername}} </p>
+     
+   
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" value="{{email}}" placeholder="Enter Your Email" name="email" >
+      <p class="errormsg"> {{eremail}} </p>
+    
+   
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" value="{{psw}}" placeholder="At least 6 charactors" name="psw" >
+      <p class="errormsg">{{erpassword}} </p>
+    
+
+      <label for="psw_repeat"><b>Repeat Password</b></label><br>
+      <input type="password" value="{{psw_repeat}}" placeholder="Repeat Password" name="psw_repeat" ><br>
+      <p class="errormsg"> {{erpassre}} </p>
+      <br>
+    
+    <div>
+    <button type="submit" class="registerbtn">Create your Amazon account</button>
+    <br>
+    <p>By creating an account you agree to Amazon's <a href="#" style="text-decoration:none">Condition of use</a> 
+      and <a href="#" style="text-decoration:none">Privacy Notice</a></p>
+    <br>
+    </div>
+    <div>
+      <hr  color="lightgrey">
+    <p>Already have an account? <a href="/login" style="text-decoration:none">Sign in</a>.</p>
+    </div>
+    </div>
+    </div>
+</form>
+</div>

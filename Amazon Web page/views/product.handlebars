@@ -1,0 +1,29 @@
+
+<section>
+    <h2>Electronics</h2>
+    <div class="cards">
+    {{#each products}}
+        <div class = "box">
+        <div class="lank">
+            <p style="background-color: rgb(255, 174, 0); color:whitesmoke;  font-weight: bold; width:10%">{{this.lanking}}</p>
+            </div>
+            
+            <div>
+              <a href="#"><img src = "{{this.img}}"></a>
+            </div>
+
+            <div>
+                {{this.title}}
+            </div>
+
+            <div>
+               {{this.price}}
+            </div>
+
+            <div>
+                {{this.description}}
+            </div>
+        </div>
+    {{/each}}
+    </div>
+</section>
